@@ -9,6 +9,17 @@ let level = 0;
 let btn = document.querySelector(".btn");
 let h4 = document.querySelector("h4");
 
+let startBtn = document.querySelector("button");
+
+startBtn.addEventListener("click", () => {
+    if(started == false){
+        started = true;
+    } //first step completed game started
+    levelUp();
+
+})
+
+
 document.addEventListener("keypress", () => {
     if(started == false){
         started = true;
